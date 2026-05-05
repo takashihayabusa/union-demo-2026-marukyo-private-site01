@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>マルキョウユニオン</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ロゴ -->
+<div class="logo">
+  <img src="logo.png" alt="マルキョウユニオン">
+</div>
+
+<!-- メイン画像 -->
+<img src="main-photo.jpeg" class="main-img">
+
+<!-- メニュー -->
+<div class="menu">
+
+  <!-- 組合とは -->
+  <div class="accordion">
+    <button class="btn" onclick="toggleContent('about-content')">
+      🏢 組合とは
+    </button>
+
+    <div id="about-content" class="content">
+      <h2>組合とは</h2>
+      <p>
+        労働組合とは、働く人の権利を守り、安心して働ける環境を作るための組織です。<br>
+        相談やサポート、職場環境の改善を目的としています。
+      </p>
+    </div>
+  </div>
+
+  <!-- 組合活動 -->
+  <div class="accordion">
+    <button class="btn" onclick="toggleContent('activity-content')">
+      👥 組合活動
+    </button>
+
+    <div id="activity-content" class="content">
+      <h2>組合活動</h2>
+      <p>
+        組合では、職場環境の改善や働きやすい職場づくりを行っています。<br>
+        定期的な会議や意見交換、相談対応などを行っています。
+      </p>
+
+      <a href="activity.pdf" target="_blank" class="pdf-btn">
+        ▶ 活動資料を見る
+      </a>
+    </div>
+  </div>
+
+  <!-- 共済・労金 -->
+  <button class="btn" onclick="openLink()">
+    💰 共済・労金
+  </button>
+
+  <!-- 活動報告 -->
+  <div class="accordion">
+    <button class="btn" onclick="toggleContent('report-content')">
+      📄 組合活動報告
+    </button>
+  
+    <div id="report-content" class="content">
+      <a href="report.pdf" target="_blank" class="pdf-btn">
+        ▶ 活動報告PDFを見る
+      </a>
+
+      <br><br>
+
+      <!-- 複数PDF例 -->
+      <a href="report_2026_04.pdf" target="_blank">2026年4月報告</a><br>
+      <a href="report_2026_03.pdf" target="_blank">2026年3月報告</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- LINE相談ボタン -->
+<div class="consult-btn" onclick="openLINE()">
+  💬 LINEで相談する
+</div>
+
+<!-- JavaScript -->
+<script>
+
+// 開閉（共通化）
+function toggleContent(id) {
+  const content = document.getElementById(id);
+  content.style.display =
+    content.style.display === "block" ? "none" : "block";
+}
+
+// 共済リンク分岐
+function openLink() {
+  const choice = confirm("OK：UAゼンセン共済\nキャンセル：九州労金");
+
+  if (choice) {
+    window.open("https://uazensen.jp/kyousai_top/", "_blank");
+  } else {
+    window.open("https://kyusyu-rokin.com/", "_blank");
+  }
+}
+
+// LINE相談（自分のURLに変更）
+function openLINE() {
+  window.open("https://line.me/", "_blank");
+}
+
+</script>
+
+</body>
+</html>
