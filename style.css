@@ -80,6 +80,49 @@ body {
 
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+/* LINE相談ボタン */
+
+.line-contact {
+  grid-column: 1 / 3;   /* ← 2列を使って中央 */
+  text-align: center;
+  margin-top: 35px;
+}
+
+.line-contact a {
+
+  display: inline-block;
+
+  background: linear-gradient(135deg, #06C755, #00a944);
+
+  color: white;
+
+  padding: 22px 70px;
+
+  border-radius: 18px;
+
+  text-decoration: none;
+
+  font-size: 30px;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+
+  transition: 0.3s;
+
+  transform: scale(1);
+}
+
+/* マウスを乗せた時 */
+.line-contact a:hover {
+
+  transform: scale(1.05);
+
+  box-shadow: 0 14px 30px rgba(0,0,0,0.3);
+
+  opacity: 0.95;
+}
 
 /* -------------------
    📱 スマホ対応
@@ -166,72 +209,3 @@ body {
     object-position: center;
 }
 /* 最初は非表示 */
-.content {
-    display: none;
-    padding: 15px;
-    margin-top: 10px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-.content {
-    display: none;
-
-    padding: 20px;
-    margin-top: 15px;
-
-    background: white;
-    border-radius: 12px;
-
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-
-    font-size: 18px;      /* ←大きく（重要） */
-    line-height: 1.8;     /* ←読みやすく */
-}
-.accordion .btn {
-    width: 100%;
-}
-.content {
-    display: none;
-    padding: 10px;
-    text-align: center;
-}
-.pdf-btn {
-    display: inline-block;
-    background: #b3003c;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-top: 10px;
-  }
-/* LINE相談ボタン */
-
-.line-contact {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.line-contact a {
-
-  display: inline-block;
-
-  background: #06C755;
-  color: white;
-
-  padding: 15px 40px;
-
-  border-radius: 12px;
-
-  text-decoration: none;
-
-  font-size: 20px;
-  font-weight: bold;
-
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-}
-
-.line-contact a:hover {
-  opacity: 0.8;
-}
