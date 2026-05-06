@@ -24,10 +24,12 @@ body {
 .main-img {
     width: 100%;
     height: 420px;
-    object-fit: cover;
-    object-position: center;
-}
 
+    object-fit: cover;
+
+    /* ↓ 少し下げる */
+    object-position: center 35%;
+}
 /* メニュー全体 */
 .menu {
 
