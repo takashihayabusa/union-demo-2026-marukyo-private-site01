@@ -1,211 +1,197 @@
 body {
-    background-color: #eeeeee;
+    margin: 0;
     font-family: sans-serif;
-    margin: 0;
+    background: #eeeeee;
 }
 
-/* タイトル＋画像 */
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-
-    background-color: #8b0000;
-    padding: 15px 0 ;
+/* ロゴ */
+.logo {
+    width: 100%;
+    background: linear-gradient(135deg, #8b0000, #c62828);
+    text-align: center;
 }
 
-.title {
-    font-size: 42px;
-    font-weight: 900;
-    color: white;
-    margin: 0;
-}
-
-.header-img {
-    height: 60px;
+.logo img {
+    width: 100%;
+    max-width: 900px;
+    height: 130px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
 }
 
 /* メイン画像 */
 .main-img {
     width: 100%;
-    height: 500px;
+    height: 420px;
     object-fit: cover;
-    object-position: center 20%;
-
-    /* 🔥 かっこよくする3点セット */
-    filter: brightness(0.9) contrast(1.15) saturate(1.1);
+    object-position: center;
 }
-/* メニュー */
-/* メニュー（元に戻す） */
+
+/* メニュー全体 */
 .menu {
+
+    width: 85%;
+    max-width: 1200px;
+
+    margin: 40px auto;
+
     display: grid;
+
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    width: 70%;
-    margin: 30px auto; /* ←重なり削除 */
+
+    gap: 25px;
 }
 
-/* ボタン（シンプル＋少し小さく） */
+/* ボタン */
 .btn {
-    background: #ffffff;
-    color: #333;
 
-    padding: 14px;        /* ←小さくした（重要） */
-    font-size: 16px;      /* ←少し小さく */
-    border-radius: 12px;
+    width: 100%;
+
+    background: white;
+
+    border: none;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    font-size: 22px;
     font-weight: bold;
 
-    text-align: center;
+    color: #333;
 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1)
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+
+    transition: 0.3s;
 }
 
-/* 最強ボタン */
-/* LINE相談ボタン */
-.consult-btn {
-    display: block;           /* ←これ超重要 */
-    width: 70%;
-    margin: 40px auto;        /* ←中央配置 */
+.btn:hover {
 
-    padding: 18px;
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.18);
+}
+
+/* 開閉内容 */
+.content {
+
+    display: none;
+
+    background: white;
+
+    margin-top: 15px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
     font-size: 18px;
-    text-align: center;
+
+    line-height: 1.8;
+}
+
+/* PDFボタン */
+.pdf-btn {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    background: #b3003c;
 
     color: white;
-    border-radius: 30px;
 
-    background: linear-gradient(135deg, #ff4d4d, #b30000);
+    padding: 14px 24px;
 
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-weight: bold;
 }
-/* LINE相談ボタン */
 
+/* LINE相談ボタン */
 .line-contact {
-  grid-column: 1 / 3;   /* ← 2列を使って中央 */
-  text-align: center;
-  margin-top: 35px;
+
+    grid-column: 1 / 3;
+
+    text-align: center;
+
+    margin-top: 20px;
 }
 
 .line-contact a {
 
-  display: inline-block;
+    display: inline-block;
 
-  background: linear-gradient(135deg, #06C755, #00a944);
+    background: linear-gradient(135deg, #06C755, #00a944);
 
-  color: white;
+    color: white;
 
-  padding: 22px 70px;
+    padding: 24px 80px;
 
-  border-radius: 18px;
+    border-radius: 20px;
 
-  text-decoration: none;
+    text-decoration: none;
 
-  font-size: 30px;
-  font-weight: bold;
+    font-size: 32px;
 
-  letter-spacing: 1px;
+    font-weight: bold;
 
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 
-  transition: 0.3s;
-
-  transform: scale(1);
+    transition: 0.3s;
 }
 
-/* マウスを乗せた時 */
 .line-contact a:hover {
 
-  transform: scale(1.05);
+    transform: scale(1.05);
 
-  box-shadow: 0 14px 30px rgba(0,0,0,0.3);
-
-  opacity: 0.95;
+    opacity: 0.95;
 }
 
-/* -------------------
-   📱 スマホ対応
-------------------- */
-@media (max-width: 600px) {
+/* スマホ */
+@media (max-width: 700px) {
 
-    /* タイトル小さく */
-    .title {
-        font-size: 26px;
-    }
-    .header-img {
-        height: 45px;
-    }
-
-    /* 画像少し低く */
     .main-img {
-        height: 200px;
+        height: 220px;
     }
 
-    /* メニュー1列 */
     .menu {
+
         grid-template-columns: 1fr;
-        width: 90%;
+
+        width: 92%;
     }
 
-    /* ボタン大きく（押しやすく） */
+    .line-contact {
+
+        grid-column: 1;
+    }
+
     .btn {
-        background: #ffffff;
-        color: #333;
-    
-        padding: 14px;
+
+        font-size: 18px;
+
+        padding: 18px;
+    }
+
+    .content {
+
         font-size: 16px;
-        border-radius: 12px;
-        font-weight: bold;
-    
-        border: none;        /* ←これ追加（重要） */
-        cursor: pointer;     /* ←クリック感 */
-    
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    .consult-btn {
+    .line-contact a {
+
         width: 90%;
-        font-size: 22px;
-        padding: 22px;
-    }
 
-    /* ヘッダー調整 */
-    .header {
-        flex-direction: column;
-    }
+        padding: 20px 10px;
 
-    .header-img {
-        height: 50px;
+        font-size: 24px;
     }
 }
-.logo {
-    width: 100%;
-    background-color: #8b0000; /* エンジ */
-    text-align: center;
-    margin-bottom: 10px
-}
-
-.logo img {
-    width: 100%;
-    max-width: 800px; /* PCで大きすぎ防止 */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-/* ロゴ */
-.logo {
-    width: 100%;
-    background-color: #8b0000;
-    background: linear-gradient(135deg, #a00000, #d32f2f); /* ←明るめに */
-    text-align: center;
-    overflow: hidden;
-}
-
-.logo img {
-    width: 100%;
-    height: 130px;
-    object-fit: cover;
-    object-position: center;
-}
-/* 最初は非表示 */
