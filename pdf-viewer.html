@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>資料閲覧</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f5f5;
+}
+
+.header {
+  background: #b71c1c;
+  padding: 15px;
+  text-align: center;
+}
+
+.home-btn {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.notice {
+  text-align: center;
+  padding: 10px;
+  background: #fff3cd;
+  color: #856404;
+  font-size: 14px;
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vh - 110px);
+  border: none;
+  background: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <a href="index.html" class="home-btn">
+    🏠 ホームページへ戻る
+  </a>
+</div>
+
+<div class="notice">
+  PDF閲覧後は「ホームページへ戻る」を押してください
+</div>
+
+<iframe id="pdfFrame"></iframe>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const pdf = params.get("file");
+
+if (pdf) {
+  document.getElementById("pdfFrame").src = pdf;
+} else {
+  document.body.innerHTML =
+    "<h2 style='text-align:center;margin-top:50px;'>PDFが指定されていません</h2>";
+}
+</script>
+
+</body>
+</html>
