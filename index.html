@@ -76,15 +76,6 @@
 
         <!-- 組合活動 -->
 
-        <div class="card">
-
-            <button class="btn"
-                    onclick="toggleContent('activity-content')">
-
-                👥 組合活動
-
-            </button>
-
             <div id="activity-content"
                  class="content">
 
@@ -126,12 +117,130 @@
 
                 <hr>
 
-    window.open(
-      "https://kyusyu-rokin.com/",
-      "_blank"
-    );
+    <!DOCTYPE html>
+<html lang="ja">
 
-  }
+<head>
+<meta charset="UTF-8">
+<title>マルキョウユニオン</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ロゴ -->
+<div class="logo">
+    <img src="logo.png" alt="マルキョウユニオン">
+</div>
+
+<!-- メイン画像 -->
+<img src="main-photo.jpeg" class="main-img">
+
+<!-- メニュー -->
+<div class="menu-grid">
+
+    <!-- 左 -->
+    <div class="menu-column">
+
+        <button class="btn">
+            👥 組合とは
+        </button>
+
+        <button class="btn">
+            📄 労使協議会
+        </button>
+
+        <button class="btn">
+            📊 アンケート結果
+        </button>
+
+        <button class="btn">
+            💰 共済・労金
+        </button>
+
+    </div>
+
+    <!-- 右 -->
+    <div class="menu-column">
+
+        <button class="btn"
+                onclick="toggleContent('activity-content')">
+
+            👥 組合活動
+
+        </button>
+
+        <div id="activity-content" class="content">
+
+            <a href="3月組合ニュース.pdf"
+               class="sub-btn"
+               target="_blank">
+
+                📰 3月組合ニュース
+
+            </a>
+
+            <a href="4月組合ニュース.pdf"
+               class="sub-btn"
+               target="_blank">
+
+                📰 4月組合ニュース
+
+            </a>
+
+            <a href="5月組合ニュース.pdf"
+               class="sub-btn"
+               target="_blank">
+
+                📰 5月組合ニュース
+
+            </a>
+
+            <a href="6月組合ニュース.pdf"
+               class="sub-btn"
+               target="_blank">
+
+                📰 6月組合ニュース
+
+            </a>
+
+            <a href="kyosai.html"
+               class="sub-btn">
+
+                ❤️ 共済活動
+
+            </a>
+
+            <a href="https://kyusyu-rokin.com/"
+               class="sub-btn"
+               target="_blank">
+
+                🏦 九州労働金庫
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function toggleContent(id){
+
+    var content=document.getElementById(id);
+
+    if(content.style.display==="block"){
+
+        content.style.display="none";
+
+    }else{
+
+        content.style.display="block";
+
+    }
 
 }
 
@@ -139,4 +248,3 @@
 
 </body>
 </html>
-   
