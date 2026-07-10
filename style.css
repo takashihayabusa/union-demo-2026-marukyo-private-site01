@@ -357,3 +357,20 @@ body {
 }
 
 }
+@media (max-width:700px){
+
+    .link-row{
+
+        flex-direction:row;
+
+    }
+
+    .half-btn{
+
+        font-size:16px;
+
+        padding:16px;
+
+    }
+
+}
