@@ -19,64 +19,165 @@
 <img src="main-photo.jpeg" class="main-img">
 
 <!-- メニュー -->
+<!-- メニュー -->
 <div class="menu">
 
-  <!-- 組合とは -->
-  <!-- 組合活動 -->
-<div id="activity-section" class="accordion">
+    <!-- 左側 -->
+    <div class="left-menu">
 
-  <button class="btn" onclick="toggleContent('activity-content')">
-    👥 組合活動
-  </button>
+        <!-- 組合とは -->
+        <div class="card">
 
-  
-  <!-- 組合活動とは -->
-  <!-- 組合活動とは -->
-<div id="activity-section" class="accordion">
+            <button class="btn"
+                    onclick="toggleContent('about-content')">
 
-  <button class="btn" onclick="toggleContent('activity-content')">
-    👥 組合活動とは
-  </button>
+                👥 組合とは
 
-  <div id="activity-content" class="content">
+            </button>
 
-    <h2>組合活動とは</h2>
+            <div id="about-content" class="content">
 
-    <p>
-      賃上げやボーナスの交渉による...
-    </p>
+                <h2>組合とは</h2>
 
-  </div>
+                <p>
+                    労働組合の目的や役割、
+                    活動内容をご紹介します。
+                </p>
 
-</div>
-<script>
+            </div>
 
-function toggleContent(id) {
+        </div>
 
-  const content = document.getElementById(id);
+        <!-- 労使協議会 -->
 
-  if (content.style.display === "block") {
-    content.style.display = "none";
-  } else {
-    content.style.display = "block";
-  }
+        <div class="card">
 
-}
+            <button class="btn"
+                    onclick="toggleContent('meeting-content')">
 
-function openLink() {
+                📄 労使協議会
 
-  const choice = confirm(
-    "OK：UAゼンセン共済\nキャンセル：九州労金"
-  );
+            </button>
 
-  if (choice) {
+            <div id="meeting-content" class="content">
 
-    window.open(
-      "https://uazensen.jp/kyousai_top/",
-      "_blank"
-    );
+                <p>
+                    労使協議会資料をご覧いただけます。
+                </p>
 
-  } else {
+                <a href="meeting.pdf"
+                   class="pdf-btn"
+                   target="_blank">
+
+                    資料を見る
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- アンケート -->
+
+        <div class="card">
+
+            <button class="btn"
+                    onclick="toggleContent('survey-content')">
+
+                📊 アンケート結果
+
+            </button>
+
+            <div id="survey-content"
+                 class="content">
+
+                <p>
+
+                    アンケート結果はこちらです。
+
+                </p>
+
+                <a href="questionnaire.pdf"
+                   class="pdf-btn"
+                   target="_blank">
+
+                    資料を見る
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- 共済・労金 -->
+
+        <div class="card">
+
+            <button class="btn"
+                    onclick="openLink()">
+
+                💰 共済・労金
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- 右側 -->
+    <div class="right-menu">
+
+        <!-- 組合活動 -->
+
+        <div class="card">
+
+            <button class="btn"
+                    onclick="toggleContent('activity-content')">
+
+                👥 組合活動
+
+            </button>
+
+            <div id="activity-content"
+                 class="content">
+
+                <h2>組合活動</h2>
+
+                <h3>📰 組合ニュース</h3>
+
+                <a href="3月組合ニュース.pdf"
+                   class="pdf-btn"
+                   target="_blank">
+
+                    3月号
+
+                </a>
+
+                <a href="4月組合ニュース.pdf"
+                   class="pdf-btn"
+                   target="_blank">
+
+                    4月号
+
+                </a>
+
+                <a href="5月組合ニュース.pdf"
+                   class="pdf-btn"
+                   target="_blank">
+
+                    5月号
+
+                </a>
+
+                <a href="6月組合ニュース.pdf"
+                   class="pdf-btn"
+                   target="_blank">
+
+                    6月号
+
+                </a>
+
+                <hr>
 
     window.open(
       "https://kyusyu-rokin.com/",
