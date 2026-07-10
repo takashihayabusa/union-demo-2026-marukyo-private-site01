@@ -270,7 +270,17 @@ body {
 　　　　　}
 
 　　.menu-column{
-    　　　　display:flex;
-    　　　　flex-direction:column;
-    　　　　gap:25px;
-　　　　　　}
+    　　display:flex;
+    　　flex-direction:column;
+    　　gap:25px;
+　　　　　}
+　　/* サブメニュー */
+　　.sub-content{
+
+    　　display:none;
+
+    　　margin-top:10px;
+
+    　　margin-left:15px;
+
+　　　　}
