@@ -205,4 +205,42 @@ body {
 　　　.menu-item{
    　　　 width:100%;
 　　　}
-}
+    /* PDFボタン */
+
+.pdf-btn{
+    　　display:block;
+    　　width:100%;
+    　　box-sizing:border-box;
+    　　text-align:center;
+
+    　　background:#1976d2;
+    　　color:#fff;
+
+    　　text-decoration:none;
+
+    　　padding:14px;
+    　　margin:10px 0;
+
+    　　border-radius:10px;
+
+    　　font-size:16px;
+    　　font-weight:bold;
+
+    　　transition:0.3s;
+　　　　}
+
+　　　.pdf-btn:hover{
+    　　background:#1259a8;
+　　　　}
+
+　　　　.content h3{
+    　margin-top:25px;
+    　color:#1976d2;
+　　　　}
+
+　　　　.content hr{
+    　margin:25px 0;
+    　border:none;
+    　border-top:1px solid #ddd;
+　　　　}
+　　　　}
