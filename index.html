@@ -20,133 +20,56 @@
 
 <!-- メニュー -->
 <!-- メニュー -->
-<div class="menu">
+<!-- メニュー全体 -->
+<div class="menu-grid">
 
     <!-- 左側 -->
-    <div class="left-menu">
+    <div class="menu-column">
 
-        <!-- 組合とは -->
-        <div class="card">
+        <button class="btn">
+            👥 組合とは
+        </button>
 
-            <button class="btn"
-                    onclick="toggleContent('about-content')">
+        <button class="btn">
+            📄 労使協議会
+        </button>
 
-                👥 組合とは
+        <button class="btn">
+            📊 アンケート結果
+        </button>
 
-            </button>
+        <button class="btn">
+            💰 共済・労金
+        </button>
 
-            <div id="about-content" class="content">
+    </div>
 
-                <h2>組合とは</h2>
+    <!-- 右側 -->
+    <div class="menu-column">
 
-                <p>
-                    労働組合の目的や役割、
-                    活動内容をご紹介します。
-                </p>
+        <button class="btn" onclick="toggleContent('activity-content')">
+            👥 組合活動
+        </button>
 
-            </div>
+        <div id="activity-content" class="content">
 
-        </div>
+            <a href="news.html" class="sub-btn">
+                📰 組合ニュース
+            </a>
 
-        <!-- 労使協議会 -->
+            <a href="kyosai.html" class="sub-btn">
+                ❤️ 共済活動
+            </a>
 
-        <div class="card">
-
-            <button class="btn"
-                    onclick="toggleContent('meeting-content')">
-
-                📄 労使協議会
-
-            </button>
-          <!-- 組合活動 -->
-　　　　　<div class="accordion">
-
-    　　　　　　<button class="btn" onclick="toggleContent('activity-content')">
-        　　　　　👥 組合活動
-    　　　　　　</button>
-
-    　　　　　　<div id="activity-content" class="content">
-
-        　　　　　　<a href="news.html" class="sub-btn">
-           　　　　　 📰 組合ニュース
-        　　　　　　</a>
-
-        　　　　　　<a href="kyosai.html" class="sub-btn">
-            　　　　　❤️ 共済活動
-        　　　　　　</a>
-
-       　 　　　　　<a href="roukin.html" class="sub-btn">
-            　　　　　🏦 九州労働金庫
-        　　　　　　</a>
-
-    　　　　　　</div>
-
-　　　　　</div>
-
-            <div id="meeting-content" class="content">
-
-                <p>
-                    労使協議会資料をご覧いただけます。
-                </p>
-
-                <a href="meeting.pdf"
-                   class="pdf-btn"
-                   target="_blank">
-
-                    資料を見る
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- アンケート -->
-
-        <div class="card">
-
-            <button class="btn"
-                    onclick="toggleContent('survey-content')">
-
-                📊 アンケート結果
-
-            </button>
-
-            <div id="survey-content"
-                 class="content">
-
-                <p>
-
-                    アンケート結果はこちらです。
-
-                </p>
-
-                <a href="questionnaire.pdf"
-                   class="pdf-btn"
-                   target="_blank">
-
-                    資料を見る
-
-                </a>
-
-            </div>
-
-        </div>
-
-        <!-- 共済・労金 -->
-
-        <div class="card">
-
-            <button class="btn"
-                    onclick="openLink()">
-
-                💰 共済・労金
-
-            </button>
+            <a href="roukin.html" class="sub-btn">
+                🏦 九州労働金庫
+            </a>
 
         </div>
 
     </div>
+
+</div>
 
     <!-- 右側 -->
     <div class="right-menu">
