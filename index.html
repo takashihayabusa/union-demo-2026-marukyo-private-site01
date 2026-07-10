@@ -84,14 +84,68 @@
             📄 共済活動資料を見る
         </a>
 
+    <!-- 組合活動 -->
+<button class="btn" onclick="toggleContent('activity-content')">
+    👥 組合活動
+</button>
+
+<div id="activity-content" class="content">
+
+    <!-- 組合ニュース -->
+    <button class="sub-btn"
+            onclick="toggleContent('news-content')">
+        📰 組合ニュース
+    </button>
+
+    <div id="news-content" style="display:none;">
+
+        <a href="5月組合ニュース.pdf"
+           class="pdf-btn"
+           target="_blank">
+            📄 5月組合ニュース
+        </a>
+
+        <a href="6月組合ニュース.pdf"
+           class="pdf-btn"
+           target="_blank">
+            📄 6月組合ニュース
+        </a>
+
+        <a href="7月組合ニュース.pdf"
+           class="pdf-btn"
+           target="_blank">
+            📄 7月組合ニュース
+        </a>
+
     </div>
 
+    <hr>
+
+    <!-- 共済活動 -->
+    <button class="sub-btn"
+            onclick="toggleContent('kyosai-content')">
+        ❤️ 共済活動
+    </button>
+
+    <div id="kyosai-content" style="display:none;">
+
+        <a href="共済活動.pdf"
+           class="pdf-btn"
+           target="_blank">
+            📄 共済活動資料を見る
+        </a>
+
+    </div>
+
+    <hr>
+
     <!-- 九州労働金庫 -->
-    <button class="sub-btn" onclick="toggleContent('roukin-content')">
+    <button class="sub-btn"
+            onclick="toggleContent('roukin-content')">
         🏦 九州労働金庫
     </button>
 
-    <div id="roukin-content" class="content">
+    <div id="roukin-content" style="display:none;">
 
         <a href="https://kyusyu-rokin.com/"
            class="pdf-btn"
@@ -102,7 +156,7 @@
     </div>
 
 </div>
-</div>
+
 
 <script>
 
