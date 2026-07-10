@@ -1,150 +1,213 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
+
 <meta charset="UTF-8">
-<title>マルキョウユニオン</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>マルキョウユニオン</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <!-- ロゴ -->
-<div class="logo">
+<header class="logo">
+
     <img src="logo.png" alt="マルキョウユニオン">
-</div>
+
+</header>
 
 <!-- メイン画像 -->
-<img src="main-photo.jpeg" class="main-img">
+<div class="main-image">
 
-<!-- メニュー -->
+    <img src="main-photo.jpeg" alt="メイン画像">
+
+</div>
+
+<!-- メニュー全体 -->
 <div class="menu-grid">
 
-    <!-- 左 -->
+    <!-- 左側 -->
     <div class="menu-column">
 
-        <button class="btn">
+        <!-- 組合とは -->
+        <button class="btn"
+                onclick="toggleContent('about-content')">
+
             👥 組合とは
+
         </button>
 
-        <button class="btn">
+        <div id="about-content" class="content">
+
+            <a href="union.html" class="pdf-btn">
+                組合とは
+            </a>
+
+            <a href="officer.html" class="pdf-btn">
+                組合役員
+            </a>
+
+            <a href="rule.pdf"
+               class="pdf-btn"
+               target="_blank">
+
+                組合規約
+
+            </a>
+
+        </div>
+
+        <!-- 共済・労金 -->
+        <button class="btn"
+                onclick="toggleContent('kyosai-menu')">
+
             💰 ゼンセン共済・九州労働金庫
+
         </button>
+
+        <div id="kyosai-menu" class="content">
+
+            <button class="sub-btn"
+                    onclick="toggleContent('kyosai-content')">
+
+                ❤️ 共済活動
+
+            </button>
+
+            <div id="kyosai-content" class="sub-content">
+
+                <a href="共済活動.pdf"
+                   class="pdf-btn"
+                   target="_blank">
+
+                    共済活動資料を見る
+
+                </a>
+
+            </div>
+
+            <button class="sub-btn"
+                    onclick="window.open('https://kyusyu-rokin.com/','_blank')">
+
+                🏦 九州労働金庫
+
+            </button>
+
+        </div>
 
     </div>
 
-    <!-- 右 -->
+    <!-- 右側 -->
     <div class="menu-column">
 
-        <button class="btn" onclick="toggleContent('activity-content')">
-    　　　👥 組合活動
-　　　　</button>
+        <button class="btn"
+                onclick="toggleContent('activity-content')">
 
-　　<div id="activity-content" class="content">
+            👥 組合活動
 
-    <!-- 組合ニュース -->
-   　　 <button class="sub-btn" onclick="toggleContent('news-content')">
-        📰 組合ニュース
-    　　</button>
+        </button>
 
-    　　<div id="news-content" class="content">
+        <div id="activity-content" class="content">
 
-        　<a href="5月組合ニュース.pdf"
-          　 class="pdf-btn"
-           　target="_blank">
-            　📄 5月組合ニュース
-        　</a>
+            <!-- 組合ニュース -->
+            <button class="sub-btn"
+                    onclick="toggleContent('news-content')">
 
-        　<a href="6月組合ニュース.pdf"
-           　class="pdf-btn"
-           　target="_blank">
-            　📄 6月組合ニュース
-        　</a>
+                📰 組合ニュース
 
-        　<a href="7月組合ニュース.pdf"
-           　class="pdf-btn"
-           　target="_blank">
-            　📄 7月組合ニュース
-        　</a>
+            </button>
 
-    　　</div>
+            <div id="news-content" class="sub-content">
 
-    <!-- 共済活動 -->
-    　　<button class="sub-btn" onclick="toggleContent('kyosai-content')">
-        　　❤️ 共済活動
-    　　</button>
+                <a href="5月組合ニュース.pdf"
+                   class="pdf-btn"
+                   target="_blank">
 
-    　　<div id="kyosai-content" class="content">
+                    📄 5月組合ニュース
 
-        　　<a href="共済活動.pdf"
-           　　class="pdf-btn"
-           　　target="_blank">
-            　　📄 共済活動資料を見る
-        　　</a>
+                </a>
 
-    <!-- 組合活動 -->
+                <a href="6月組合ニュース.pdf"
+                   class="pdf-btn"
+                   target="_blank">
 
+                    📄 6月組合ニュース
 
-    　<button class="sub-btn" onclick="toggleContent('kyosai-content')">
-        ❤️ 共済活動
-    　</button>
+                </a>
 
-    　<div id="kyosai-content" style="display:none;">
+                <a href="7月組合ニュース.pdf"
+                   class="pdf-btn"
+                   target="_blank">
 
-        <a href="共済活動.pdf" class="pdf-btn" target="_blank">
-            📄 共済活動資料を見る
-        </a>
+                    📄 7月組合ニュース
 
-    　</div>
+                </a>
 
-    
-　　</div>
+            </div>
+                        <!-- 共済活動 -->
+            <button class="sub-btn"
+                    onclick="toggleContent('activity-kyosai')">
 
-    <hr>
+                ❤️ 共済活動
 
-    <!-- 九州労働金庫 -->
-    <button class="sub-btn"
-            onclick="toggleContent('roukin-content')">
-        🏦 九州労働金庫
-    </button>
+            </button>
 
-    <div id="roukin-content" style="display:none;">
+            <div id="activity-kyosai" class="sub-content">
 
-        <a href="https://kyusyu-rokin.com/"
-           class="pdf-btn"
-           target="_blank">
-            九州労働金庫ホームページ
-        </a>
+                <a href="共済活動.pdf"
+                   class="pdf-btn"
+                   target="_blank">
+
+                    📄 共済活動資料を見る
+
+                </a>
+
+            </div>
+
+            <!-- 九州労働金庫 -->
+            <button class="sub-btn"
+                    onclick="toggleContent('roukin-content')">
+
+                🏦 九州労働金庫
+
+            </button>
+
+            <div id="roukin-content" class="sub-content">
+
+                <a href="https://kyusyu-rokin.com/"
+                   class="pdf-btn"
+                   target="_blank">
+
+                    九州労働金庫ホームページ
+
+                </a>
+
+            </div>
+
+        </div>
 
     </div>
 
 </div>
 
+<!-- LINE相談 -->
+<div class="line-contact">
 
-<script>
+    <a href="https://line.me/R/ti/p/@xxxxxxxx"
+       target="_blank">
 
-function toggleContent(id){
+        📱 LINE相談はこちら
 
-    alert(id);
+    </a>
 
-    var content = document.getElementById(id);
+</div>
 
-    if(content.style.display==="block"){
-
-        content.style.display="none";
-
-    }else{
-
-        content.style.display="block";
-
-    }
-
-}
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
