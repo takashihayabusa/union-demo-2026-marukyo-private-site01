@@ -30,22 +30,6 @@ body {
     /* ↓ 少し下げる */
     object-position: center 35%;
 }
-/* メニュー全体 */
-.menu {
-
-    width: 85%;
-    max-width: 1200px;
-
-    margin: 40px auto;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 25px;
-}
-
-/* ボタン */
 .btn {
 
     width: 100%;
@@ -159,7 +143,7 @@ body {
 
 /* スマホ */
 @media (max-width: 700px) {
-
+    
     .main-img {
         height: 220px;
     }
@@ -197,7 +181,7 @@ body {
         font-size: 24px;
     }
     .menu-row{
-    　　　display:grid;
+         display:grid;
     　　　grid-template-columns:1fr 1fr;
     　　　gap:25px;
 　　　}
