@@ -205,42 +205,57 @@ body {
 　　　.menu-item{
    　　　 width:100%;
 　　　}
-    /* PDFボタン */
 
 .pdf-btn{
-    　　display:block;
-    　　width:100%;
-    　　box-sizing:border-box;
-    　　text-align:center;
+    
+    　　　display:block;
+    　　　width:100%;
+    　　　box-sizing:border-box;
+    　　　text-align:center;
 
-    　　background:#1976d2;
-    　　color:#fff;
+    　　　background:#1976d2;
+    　　　color:#fff;
 
-    　　text-decoration:none;
+    　　　text-decoration:none;
 
-    　　padding:14px;
-    　　margin:10px 0;
+    　　　padding:14px;
+    　　　margin:10px 0;
 
-    　　border-radius:10px;
+    　　　border-radius:10px;
 
-    　　font-size:16px;
-    　　font-weight:bold;
+    　　　font-size:16px;
+    　　　font-weight:bold;
 
-    　　transition:0.3s;
-　　　　}
+    　　　transition:0.3s;
+　　　　　　}
 
-　　　.pdf-btn:hover{
-    　　background:#1259a8;
-　　　　}
+　.pdf-btn:hover{
+    　　　background:#1259a8;
+　　　　　　}
 
-　　　　.content h3{
-    　margin-top:25px;
-    　color:#1976d2;
-　　　　}
+　　.content h3{
+    　　　margin-top:25px;
+    　　　color:#1976d2;
+　　　　　　}
 
-　　　　.content hr{
-    　margin:25px 0;
-    　border:none;
-    　border-top:1px solid #ddd;
-　　　　}
-　　　　}
+　　.content hr{
+    　　　margin:25px 0;
+    　　　border:none;
+    　　　border-top:1px solid #ddd;
+　　　　　　}
+　　　　　　}
+　　.menu-grid{
+    　　　width:85%;
+    　　　max-width:1200px;
+    　　　margin:40px auto;
+    　　　display:grid;
+   　　 　grid-template-columns:1fr 1fr;
+    　　　gap:25px;
+    　　　align-items:start;
+　　　　　}　
+
+　　.menu-column{
+    　　　　display:flex;
+    　　　　flex-direction:column;
+    　　　　gap:25px;
+　　　　　　}
