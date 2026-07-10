@@ -190,30 +190,31 @@ body {
    　　　 width:100%;
 　　　}
 
-.pdf-btn{
-    
+　　　.pdf-btn{
+
     　　　display:block;
-    　　　width:100%;
+
+   　　　 width:100%;
+
     　　　box-sizing:border-box;
-    　　　text-align:center;
+
+    　　　margin:10px 0;
+
+    　　　padding:14px;
 
     　　　background:#1976d2;
-    　　　color:#fff;
+
+    　　　color:white;
 
     　　　text-decoration:none;
 
-    　　　padding:14px;
-    　　　margin:10px 0;
+   　　　 border-radius:10px;
 
-    　　　border-radius:10px;
+    　　　text-align:center;
 
-    　　　font-size:16px;
     　　　font-weight:bold;
-
-    　　　transition:0.3s;
-　　　　　　}
-
-　.pdf-btn:hover{
+　　　　}
+　　　.pdf-btn:hover{
     　　　background:#1259a8;
 　　　　　　}
 
@@ -236,7 +237,37 @@ body {
    　　 　grid-template-columns:1fr 1fr;
     　　　gap:25px;
     　　　align-items:start;
-　　　　　}　
+　　　　　}
+　.sub-btn{
+
+    　　　display:block;
+
+    　　　width:100%;
+
+    　　　box-sizing:border-box;
+
+    　　　margin:12px 0;
+
+    　　　padding:16px;
+
+    　　　background:#f8f8f8;
+
+    　　　border-radius:10px;
+
+    　　　text-decoration:none;
+
+    　　　color:#333;
+
+    　　　font-size:18px;
+
+    　　　font-weight:bold;
+
+    　　　text-align:left;
+
+    　　　border:none;
+
+    　　　cursor:pointer;
+　　　　　}
 
 　　.menu-column{
     　　　　display:flex;
