@@ -30,74 +30,106 @@
 <!-- メニュー全体 -->
 <div class="menu">
 
-    <!-- 左側 -->
-    <div class="menu-column">
+    <!-- 組合とは -->
+    <button class="btn"
+            onclick="toggleContent('about-content')">
+        👥 組合とは
+    </button>
 
-        <!-- 組合とは -->
-        <button class="btn"
-                onclick="toggleContent('about-content')">
+    <div id="about-content" class="content">
 
-            👥 組合とは
+        <a href="union.html" class="pdf-btn">
+            組合とは
+        </a>
 
+    </div>
+
+    <!-- 組合活動 -->
+    <button class="btn"
+            onclick="toggleContent('activity-content')">
+        👥 組合活動
+    </button>
+
+    <div id="activity-content" class="content">
+
+        <!-- 組合ニュース -->
+        <button class="sub-btn"
+                onclick="toggleContent('news-content')">
+            📰 組合ニュース
         </button>
 
-        <div id="about-content" class="content">
+        <div id="news-content" class="sub-content">
 
-            <a href="union.html" class="pdf-btn">
-                組合とは
+            <a href="5月組合ニュース.pdf"
+               class="pdf-btn"
+               target="_blank">
+                📄 5月組合ニュース
+            </a>
+
+            <a href="6月組合ニュース.pdf"
+               class="pdf-btn"
+               target="_blank">
+                📄 6月組合ニュース
+            </a>
+
+            <a href="7月組合ニュース.pdf"
+               class="pdf-btn"
+               target="_blank">
+                📄 7月組合ニュース
             </a>
 
         </div>
 
-        <!-- 共済・労金 -->
-        <div class="link-row">
+        <!-- 共済活動 -->
+        <button class="sub-btn"
+                onclick="toggleContent('activity-kyosai')">
+            ❤️ 共済活動
+        </button>
 
-    　　　　<button class="btn half-btn"
-        　　　　onclick="window.open('https://uazensen.jp/kyousai_top/','_blank')">
+        <div id="activity-kyosai" class="sub-content">
 
-        　　　　❤️ ゼンセン共済
+            <a href="共済活動.pdf"
+               class="pdf-btn"
+               target="_blank">
+                📄 共済活動資料を見る
+            </a>
 
-    　　　　</button>
+        </div>
 
-    　　　　<button class="btn half-btn"
-        　　　　onclick="window.open('https://kyusyu-rokin.com/','_blank')">
+        <!-- 九州労働金庫 -->
+        <button class="sub-btn"
+                onclick="toggleContent('roukin-content')">
+            🏦 九州労働金庫
+        </button>
 
-        　　　　🏦 九州労働金庫
+        <div id="roukin-content" class="sub-content">
 
-    　　　　</button>
-
-　　　　　</div>
-        <div id="kyosai-menu" class="content">
-
-            <button class="sub-btn"
-                    onclick="toggleContent('kyosai-content')">
-
-                ❤️ 共済活動
-
-            </button>
-
-            <div id="kyosai-content" class="sub-content">
-
-                <a href="共済活動.pdf"
-                   class="pdf-btn"
-                   target="_blank">
-
-                    共済活動資料を見る
-
-                </a>
-
-            </div>
-
-            <button class="sub-btn"
-                    onclick="window.open('https://kyusyu-rokin.com/','_blank')">
-
-                🏦 九州労働金庫
-
-            </button>
+            <a href="https://kyusyu-rokin.com/"
+               class="pdf-btn"
+               target="_blank">
+                九州労働金庫ホームページ
+            </a>
 
         </div>
 
     </div>
+
+    <!-- 共済・労金 -->
+    <div class="link-row">
+
+        <button class="btn half-btn"
+                onclick="window.open('https://uazensen.jp/kyousai_top/','_blank')">
+            ❤️ ゼンセン共済
+        </button>
+
+        <button class="btn half-btn"
+                onclick="window.open('https://kyusyu-rokin.com/','_blank')">
+            🏦 九州労働金庫
+        </button>
+
+    </div>
+
+</div>
 
     <!-- 右側 -->
     <div class="menu-column">
