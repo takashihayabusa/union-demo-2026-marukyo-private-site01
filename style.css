@@ -133,4 +133,129 @@ body{
     flex:1;
 
 }
+/* ==========================================
+   アコーディオン
+========================================== */
+
+.content{
+
+    display:none;
+
+    background:#ffffff;
+
+    margin-top:15px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+.content.active{
+
+    display:block;
+
+}
+
+/* ==========================================
+   サブメニュー
+========================================== */
+
+.sub-content{
+
+    display:none;
+
+    margin-top:15px;
+
+    margin-left:15px;
+
+}
+
+.sub-content.active{
+
+    display:block;
+
+}
+
+/* ==========================================
+   PDFボタン
+========================================== */
+
+.pdf-btn{
+
+    display:block;
+
+    width:100%;
+
+    margin:12px 0;
+
+    padding:16px;
+
+    background:#1976d2;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.pdf-btn:hover{
+
+    background:#1259a8;
+
+}
+
+/* ==========================================
+   見出し
+========================================== */
+
+.content h2{
+
+    margin-bottom:20px;
+
+    color:#b3003c;
+
+}
+
+.content h3{
+
+    margin-top:25px;
+
+    margin-bottom:10px;
+
+    color:#1976d2;
+
+}
+
+.content p{
+
+    margin-bottom:15px;
+
+}
+
+.content hr{
+
+    margin:25px 0;
+
+    border:none;
+
+    border-top:1px solid #dddddd;
+
+}
 　　/* 共済・労金ボタン */
