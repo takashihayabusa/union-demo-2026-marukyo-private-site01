@@ -258,4 +258,149 @@ body{
     border-top:1px solid #dddddd;
 
 }
+/* ==========================================
+   サブボタン
+========================================== */
+
+.sub-btn{
+
+    display:block;
+
+    width:100%;
+
+    margin:12px 0;
+
+    padding:16px;
+
+    background:#f8f8f8;
+
+    color:#333;
+
+    text-decoration:none;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sub-btn:hover{
+
+    background:#ececec;
+
+}
+
+/* ==========================================
+   LINE相談
+========================================== */
+
+.line-contact{
+
+    margin-top:40px;
+
+    text-align:center;
+
+}
+
+.line-contact a{
+
+    display:inline-block;
+
+    background:linear-gradient(135deg,#06C755,#00a944);
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    padding:22px 70px;
+
+    border-radius:20px;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+}
+
+.line-contact a:hover{
+
+    transform:scale(1.05);
+
+    opacity:.95;
+
+}
+
+/* ==========================================
+   共済・労金ボタン
+========================================== */
+
+.link-row{
+
+    display:flex;
+
+    gap:20px;
+
+    width:100%;
+
+}
+
+.link-row .btn{
+
+    flex:1;
+
+}
+
+/* ==========================================
+   iframe（PDF表示）
+========================================== */
+
+iframe{
+
+    width:100%;
+
+    height:700px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ffffff;
+
+}
+
+/* ==========================================
+   画像
+========================================== */
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ==========================================
+   共通余白
+========================================== */
+
+section{
+
+    margin-bottom:30px;
+
+}
 　　/* 共済・労金ボタン */
