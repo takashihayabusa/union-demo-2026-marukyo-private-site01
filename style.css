@@ -82,31 +82,7 @@ body{
    ボタン共通
 ========================================== */
 
-.btn{
 
-    width:100%;
-
-    background:#ffffff;
-
-    border:none;
-
-    border-radius:16px;
-
-    padding:20px;
-
-    font-size:22px;
-
-    font-weight:bold;
-
-    color:#333;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-
-}
 
 .btn:hover{
 
@@ -114,6 +90,20 @@ body{
 
     box-shadow:0 10px 20px rgba(0,0,0,.18);
 
+}
+.btn {
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 20px;
+    border-radius: 16px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+
+    margin: 8px 0;    /* ←20px→8pxに変更 */
 }
 
 /* 共済・労金 */
