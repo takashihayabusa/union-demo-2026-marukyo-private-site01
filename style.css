@@ -403,4 +403,145 @@ section{
     margin-bottom:30px;
 
 }
+/* ==========================================
+   スマホ対応
+========================================== */
+
+@media screen and (max-width:768px){
+
+    /* ロゴ */
+
+    .logo img{
+        height:90px;
+    }
+
+    /* メイン画像 */
+
+    .main-image img{
+        height:220px;
+    }
+
+    /* メニュー */
+
+    .menu{
+        width:95%;
+        margin:20px auto;
+    }
+
+    /* 2列→1列 */
+
+    .menu-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .menu-column{
+        gap:20px;
+    }
+
+    /* ボタン */
+
+    .btn{
+
+        font-size:18px;
+
+        padding:18px;
+
+    }
+
+    .half-btn{
+        width:100%;
+    }
+
+    /* 共済・労金 */
+
+    .link-row{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    /* PDFボタン */
+
+    .pdf-btn{
+
+        font-size:16px;
+
+        padding:14px;
+
+    }
+
+    /* サブボタン */
+
+    .sub-btn{
+
+        font-size:16px;
+
+        padding:14px;
+
+    }
+
+    /* アコーディオン */
+
+    .content{
+
+        padding:18px;
+
+        font-size:16px;
+
+        line-height:1.7;
+
+    }
+
+    /* LINE相談 */
+
+    .line-contact a{
+
+        width:100%;
+
+        padding:18px;
+
+        font-size:22px;
+
+    }
+
+    /* PDF */
+
+    iframe{
+
+        height:500px;
+
+    }
+
+}
+
+/* ==========================================
+   タブレット
+========================================== */
+
+@media screen and (min-width:769px) and (max-width:1100px){
+
+    .menu-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================================
+   PC
+========================================== */
+
+@media screen and (min-width:1101px){
+
+    .menu-grid{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
 　　/* 共済・労金ボタン */
