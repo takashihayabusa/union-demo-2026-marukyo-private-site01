@@ -583,4 +583,11 @@ section{
     font-size:28px;
 
 }
+.pdf-frame{
+    width:100%;
+    height:700px;
+    border:none;
+    border-radius:12px;
+    margin-top:15px;
+}
 　　/* 共済・労金ボタン */
