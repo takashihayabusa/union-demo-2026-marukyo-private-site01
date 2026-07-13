@@ -56,10 +56,15 @@ body{
 ========================================== */
 
 .menu{
-    width:90%;
-    max-width:1200px;
+    width:82%;
+    max-width:1250px;
     margin:40px auto;
 }
+
+.menu > .btn{
+    margin-top:16px;
+}
+
 
 /* 左右2列 */
 
@@ -151,12 +156,11 @@ body{
     color: #333;
     text-align:center;
     cursor: pointer;
+    justify-content:center;
     
 
     margin: 8px 0;    /* ←20px→8pxに変更 */
 }
-
-
 /* 共済・労金 */
 
 .link-row {
