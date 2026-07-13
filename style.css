@@ -85,6 +85,21 @@ body{
     margin-top:20px;
     flex-wrap:wrap;
 }
+.activity-card{
+    background:#ffffff;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    width:260px;
+    min-height:170px;
+}
+
+.activity-card h3{
+    margin:0 0 20px;
+    font-size:32px;
+    font-weight:bold;
+    color:#1976d2;
+}
 .news-card{
     width:280px;
 }
