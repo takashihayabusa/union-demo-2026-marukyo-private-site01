@@ -79,10 +79,10 @@ body{
 /* 組合活動内のボタンを横並び */
 .activity-card{
     width:280px;
-   　min-height:70px; 
+   　min-height:80px; 
     background:#fff;
     border-radius:20px;
-    padding:15px;
+    padding:12px;
     box-shadow:0 5px 15px rgba(0,0,0,.15);
 
     min-height:120px;
@@ -296,7 +296,7 @@ body{
 
     padding:12px 15px;
 
-    background:#f8f8f8;
+    background:#ececec;
 
     color:#333;
 
@@ -318,11 +318,6 @@ body{
 
 }
 
-.sub-btn:hover{
-
-    background:#ececec;
-
-}
 
 /* ==========================================
    LINE相談
@@ -502,6 +497,11 @@ section{
 
         padding:14px;
 
+    }
+   .sub-btn,
+   .pdf-btn{
+        padding:12px 18px;
+        font-size:24px;
     }
 
     /* アコーディオン */
