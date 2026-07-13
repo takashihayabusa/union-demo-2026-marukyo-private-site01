@@ -154,7 +154,15 @@ body{
 .link-row {
     display: flex;
     gap: 10px;
-    margin-top: 15px;
+    m
+}
+.link-row .btn{
+    display:flex;
+   　gap: 10px;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+   　argin-top: 15px;
 }
 
 .half-btn {
