@@ -79,21 +79,11 @@ body{
 /* 組合活動内のボタンを横並び */
 .activity-card{
     width:280px;
-    min-height:220px;
-
     background:#fff;
-
     border-radius:20px;
-
     padding:20px;
-
     box-shadow:0 5px 15px rgba(0,0,0,.15);
-
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
 }
-
 .activity-card h3{
     margin:0 0 20px;
     font-size:32px;
@@ -118,6 +108,12 @@ body{
     border-radius:18px;
     padding:20px;
     box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+.activity-row{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:20px;
 }
 
 /* ==========================================
