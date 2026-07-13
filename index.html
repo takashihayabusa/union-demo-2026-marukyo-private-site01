@@ -50,17 +50,17 @@
     👥 組合活動
 </button>
 
-<div id="activity-content" class="content">
-    <div class = "activity-row">
+<div class="activity-row">
 
     <!-- 組合ニュース -->
-      <button class="news-card"
-              onclick="toggleContent('news-content')">
-          📰 組合ニュース
-      </button>
+    <div class="activity-card">
 
-      <div id="news-content" class="sub-content">
+        <button class="sub-btn"
+                onclick="toggleContent('news-content')">
+            📰 組合ニュース
+        </button>
 
+        <div id="news-content" class="sub-content">
           <a href="5月組合ニュース.pdf" class="pdf-btn" target="_blank">
               📄 5月組合ニュース
           </a>
@@ -72,7 +72,7 @@
           <a href="7月組合ニュース.pdf" class="pdf-btn" target="_blank">
             📄 7月組合ニュース
           </a>
-      </div>
+      　</div>
     
    　　　 <!-- 共済活動 -->
     　　  <a href="マイカー共済.pdf"
