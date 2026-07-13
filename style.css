@@ -79,9 +79,10 @@ body{
 /* 組合活動内のボタンを横並び */
 .activity-card{
     width:280px;
+   　min-height:70px; 
     background:#fff;
     border-radius:20px;
-    padding:20px;
+    padding:15px;
     box-shadow:0 5px 15px rgba(0,0,0,.15);
 
     min-height:120px;
@@ -91,6 +92,7 @@ body{
     font-size:32px;
     font-weight:bold;
     color:#1976d2;
+
 }
 .news-card{
     width:280px;
@@ -292,7 +294,7 @@ body{
 
     margin:12px 0;
 
-    padding:15px;
+    padding:12px 15px;
 
     background:#f8f8f8;
 
@@ -304,7 +306,7 @@ body{
 
     border-radius:10px;
 
-    font-size:22px;
+    font-size:24px;
 
     font-weight:bold;
 
