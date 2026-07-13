@@ -76,6 +76,21 @@ body{
     flex-direction:column;
     gap:25px;
 }
+/* 組合活動内のボタンを横並び */
+.activity-row{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+/* 3つのボタン */
+.activity-row .sub-btn{
+    flex:1;
+    min-width:180px;
+    max-width:260px;
+}
 
 /* ==========================================
    ボタン共通
