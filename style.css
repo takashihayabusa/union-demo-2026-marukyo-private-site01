@@ -89,10 +89,9 @@ body{
     width:280px;
 }
 .small-card{
-    width:220px;
+    width:260px;
+    padding:20px;
 }
-
-/* 3つのボタン */
 .activity-row .sub-btn{
     flex:1;
     min-width:180px;
@@ -207,33 +206,24 @@ body{
 ========================================== */
 
 .pdf-btn{
-
     display:block;
-
     width:100%;
+    box-sizing:border-box;
 
-    margin:12px 0;
-
-    padding:16px;
+    margin-top:20px;
+    padding:18px;
 
     background:#1976d2;
-
-    color:#ffffff;
-
-    text-decoration:none;
-
-    border-radius:10px;
-
-    font-size:18px;
-
-    font-weight:bold;
+    color:white;
 
     text-align:center;
+    text-decoration:none;
 
-    transition:.3s;
+    border-radius:12px;
 
+    font-size:20px;
+    font-weight:bold;
 }
-
 .pdf-btn:hover{
 
     background:#1259a8;
