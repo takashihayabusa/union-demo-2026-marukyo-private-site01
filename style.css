@@ -79,18 +79,19 @@ body{
 /* 組合活動内のボタンを横並び */
 .activity-card{
     width:280px;
+    min-height:220px;
+
     background:#fff;
+
     border-radius:20px;
+
     padding:20px;
+
     box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-.activity-card{
-    background:#ffffff;
-    border-radius:18px;
-    padding:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    width:260px;
-    min-height:170px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
 }
 
 .activity-card h3{
