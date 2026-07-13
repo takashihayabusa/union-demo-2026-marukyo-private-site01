@@ -318,6 +318,11 @@ body{
     transition:.3s;
 
 }
+.sub-btn,
+.pdf-btn{
+    padding:12px 18px;
+    font-size:24px;
+}
 
 
 /* ==========================================
