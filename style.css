@@ -426,119 +426,39 @@ section{
 
 @media screen and (max-width:768px){
 
-    /* ロゴ */
-
-    .logo img{
-        height:90px;
-    }
-
-    /* メイン画像 */
-
-    .main-image img{
-        height:220px;
-    }
-
-    /* メニュー */
-
-    .menu{
-        width:95%;
-        margin:20px auto;
-    }
-
-    /* メインボタン */
-
-    .btn{
-
-        font-size:20px;
-
-        padding:18px;
-
-    }
-
-    /* 組合活動 */
-
     .activity-grid{
 
-        grid-template-columns:1fr;
-
-        gap:15px;
+        display:block !important;
 
     }
 
-    /* サブボタン */
+    .activity-grid .sub-btn{
 
-    .sub-btn{
-
-        min-height:60px;
-
-        font-size:18px;
-
-        padding:16px;
-
-    }
-
-    /* PDFボタン */
-
-    .pdf-btn{
-
-        font-size:18px;
-
-        padding:15px;
-
-    }
-
-    /* 共済・労金 */
-
-    .bottom-links{
-
-        flex-direction:column;
-
-        gap:15px;
-
-    }
-
-    .bottom-links .btn{
-
-        max-width:none;
+        display:flex;
 
         width:100%;
 
-        font-size:20px;
+        margin:12px 0;
 
-    }
+        justify-content:center;
 
-    /* アコーディオン */
+        align-items:center;
 
-    .content{
+        font-size:18px;
 
-        padding:20px;
+        white-space:normal;
 
-        font-size:16px;
+        height:auto;
 
-        line-height:1.7;
+        min-height:65px;
 
-    }
+        line-height:1.5;
 
-    /* LINE相談 */
-
-    .line-contact a{
-
-        font-size:22px;
-
-        padding:18px;
-
-    }
-
-    /* PDF */
-
-    iframe{
-
-        height:500px;
+        box-sizing:border-box;
 
     }
 
 }
-
 /* ==========================================
    タブレット
 ========================================== */
