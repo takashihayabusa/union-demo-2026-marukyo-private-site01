@@ -77,13 +77,12 @@ body{
     gap:25px;
 }
 /* 組合活動内のボタンを横並び */
-.activity-row{
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    gap:20px;
-    margin-top:20px;
-    flex-wrap:wrap;
+.activity-card{
+    width:280px;
+    background:#fff;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 .activity-card{
     background:#ffffff;
