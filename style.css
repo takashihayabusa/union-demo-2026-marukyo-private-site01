@@ -78,7 +78,7 @@ body{
 }
 /* 組合活動内のボタンを横並び */
 .activity-card{
-    width:280px;
+    width:340px;
    　min-height:80px; 
     background:#fff;
     border-radius:20px;
@@ -320,7 +320,12 @@ body{
 }
 .sub-btn,
 .pdf-btn{
-    padding:12px 18px;
+    width:100%;
+    white-space:nowrap;   /* 改行しない */
+    overflow:hidden;
+    text-overflow:ellipsis;
+
+    padding:12px;
     font-size:24px;
 }
 
