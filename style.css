@@ -136,18 +136,26 @@ body{
 }
 .btn {
     width: 100%;
-    background: white;
+   　box-sizing:border-box;
+   　display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    padding:22px;
+    background:#fff;
     border: none;
     padding: 20px;
     border-radius: 16px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     color: #333;
+    text-align:center;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    
 
     margin: 8px 0;    /* ←20px→8pxに変更 */
 }
+
 
 /* 共済・労金 */
 
