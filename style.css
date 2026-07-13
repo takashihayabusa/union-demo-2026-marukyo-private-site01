@@ -80,9 +80,16 @@ body{
 .activity-row{
     display:flex;
     justify-content:center;
-    gap:15px;
+    align-items:flex-start;
+    gap:20px;
+    margin-top:20px;
     flex-wrap:wrap;
-    margin-top:15px;
+}
+.news-card{
+    width:280px;
+}
+.small-card{
+    width:220px;
 }
 
 /* 3つのボタン */
@@ -90,6 +97,13 @@ body{
     flex:1;
     min-width:180px;
     max-width:260px;
+}
+.news-card,
+.small-card{
+    background:#fff;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 /* ==========================================
