@@ -47,7 +47,7 @@ body{
     object-fit:cover;
 
     /* 上側を少し表示する */
-    object-position:center 15%;
+    object-position:center 5%;
 }
 .main-image img{
     object-fit:cover;
