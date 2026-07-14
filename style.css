@@ -633,6 +633,7 @@ section{
         font-size:18px;
         padding:15px 0;
     }
+}
 /* スマホでは縦並び */
 @media screen and (max-width:768px){
 
