@@ -512,6 +512,13 @@ section{
     margin:20px auto;
 
 }
+.consult-content{
+    display:none;
+}
+
+.consult-content.active{
+    display:block;
+}
 
 @media(max-width:768px){
 
