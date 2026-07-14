@@ -2,8 +2,10 @@
 <html lang="ja">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>マルキョウユニオン</title>
 
 <link rel="stylesheet" href="style.css">
@@ -12,132 +14,261 @@
 
 <body>
 
-<!-- ロゴ -->
+<!-- =========================
+     ロゴ
+========================= -->
+
 <header class="logo">
-    <img src="logo.png" alt="マルキョウユニオン">
+
+    <img src="logo.png"
+         alt="マルキョウユニオン">
+
 </header>
 
-<!-- メイン画像 -->
+<!-- =========================
+     メイン画像
+========================= -->
+
 <div class="main-image">
+
     <img src="main-photo.jpeg"
          class="main-img"
          alt="メイン画像">
+
 </div>
 
-<!-- メニュー -->
+<!-- =========================
+     メニュー
+========================= -->
+
 <div class="menu">
 
     <!-- 組合とは -->
+
     <button class="btn"
             onclick="toggleContent('about-content')">
+
         👥 組合とは
+
     </button>
 
-    <div id="about-content" class="content">
+    <div id="about-content"
+         class="content">
 
         <p>
-            私たちの労働組合は、働く仲間が安心して働ける職場づくりを目指し、
-            賃金・労働条件・福利厚生などの改善に取り組んでいます。
+
+            私たちマルキョウユニオンは、
+            働く仲間が安心して働ける職場づくりを目指し、
+            賃金・労働条件・福利厚生の改善に取り組んでいます。
+
         </p>
 
     </div>
 
-
     <!-- 組合活動 -->
+
     <button class="btn"
             onclick="toggleContent('activity-content')">
+
         👥 組合活動
+
     </button>
 
-    <div id="activity-content" class="content">
+    <div id="activity-content"
+         class="content">
 
         <div class="activity-grid">
 
+            <!-- 組合ニュース -->
+
             <button class="sub-btn"
                     onclick="toggleContent('news-content')">
+
                 📰 組合ニュース
+
             </button>
+
+            <!-- 共済活動 -->
 
             <a href="マイカー共済.pdf"
                class="sub-btn"
                target="_blank">
+
                 ❤️ 共済活動
+
             </a>
+
+            <!-- 労金 -->
 
             <a href="労金まとめ.pdf"
                class="sub-btn"
                target="_blank">
+
                 🏦 労金との活動
+
             </a>
 
         </div>
 
-        <div id="news-content" class="sub-content">
+        <!-- ニュース -->
+
+        <div id="news-content"
+             class="sub-content">
 
             <a href="5月組合ニュース.pdf"
                class="pdf-btn"
                target="_blank">
+
                 📄 5月組合ニュース
+
             </a>
 
             <a href="6月組合ニュース.pdf"
                class="pdf-btn"
                target="_blank">
+
                 📄 6月組合ニュース
+
             </a>
 
             <a href="7月組合ニュース.pdf"
                class="pdf-btn"
                target="_blank">
+
                 📄 7月組合ニュース
+
             </a>
 
         </div>
 
     </div>
+        <!-- =========================
+         ゼンセン共済・九州労金
+    ========================= -->
 
-    <!-- ゼンセン共済・九州労金 -->
-    　<div class="bottom-links">
+    <div class="bottom-links">
 
         <a href="https://uazensen.jp/kyousai_top/"
            class="btn"
            target="_blank">
+
             ❤️ ゼンセン共済
+
         </a>
 
         <a href="https://kyusyu-rokin.com/"
            class="btn"
            target="_blank">
+
             🏦 九州労金
+
         </a>
 
-      </div>
+    </div>
 
 </div>
 
-<div class="bottom-links">
+<!-- =========================
+     委員長相談
+========================= -->
 
-　　<button class="consult-btn"
-　　　　　　onclick="document.getElementById('consult-content').classList.toggle('active');">
+<div class="line-contact">
 
-　　　　　📱相談をする
+    <button class="consult-btn"
+            onclick="toggleContent('consult-content')">
 
-　　</button>
+        📱 相談をする
 
-            <
+    </button>
+
+    <div id="consult-content"
+         class="consult-content">
+
+        <h2>相談方法をお選びください</h2>
+
+        <div class="consult-box">
+
+            <!-- 電話相談 -->
+
+            <div class="consult-card">
+
+                <h3>📞 電話による相談</h3>
+
+                <p>
+
+                    委員長へ直接お電話いただけます。
+
+                </p>
+
+                <h1>090-1234-5678</h1>
+
+                <a href="tel:09012345678"
+                   class="phone-btn">
+
+                    📞 電話をかける
+
+                </a>
+
+            </div>
+
+            <!-- LINE相談 -->
+
+            <div class="consult-card">
+
+                <h3>💬 LINEによる相談</h3>
+
+                <p>
+
+                    QRコードを読み取るか、
+                    下のボタンをご利用ください。
+
+                </p>
+
+                <img src="kumaki.png"
+                     class="line-qr"
+                     alt="LINE QRコード">
+
+                <a href="https://line.me/ti/p/HLkr0fU01K"
+                   target="_blank"
+                   class="line-btn">
+
+                    LINEで相談する
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
+<!-- =========================
+     JavaScript
+========================= -->
+
 <script>
-function toggleContent(id) {
+
+function toggleContent(id){
 
     const content = document.getElementById(id);
 
-    if (!content) return;
+    if(!content) return;
 
-    content.classList.toggle("active");
+    if(content.classList.contains("active")){
+
+        content.classList.remove("active");
+
+    }else{
+
+        content.classList.add("active");
+
+    }
 
 }
+
 </script>
 
 </body>
-</html>
 
+</html>
