@@ -41,11 +41,14 @@ body{
    メイン画像
 ========================================== */
 
-.main-image{
+.main-img{
     width:100%;
-    overflow:hidden;
-}
+    height:420px;
+    object-fit:cover;
 
+    /* 上側を少し表示する */
+    object-position:center 15%;
+}
 .main-image img{
     object-fit:cover;
     object-position:center 35%;
