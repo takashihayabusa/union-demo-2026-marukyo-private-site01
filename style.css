@@ -25,13 +25,13 @@ body{
     text-align:center;
 }
 
-.logo img{
+.main-img{
     width:100%;
-    max-width:900px;
-    height:130px;
+    height:420px;
     object-fit:cover;
-    display:block;
-    margin:0 auto;
+
+    /* 画像を少し上へ表示 */
+    object-position:center 0%;
 }
 .logo-text{
     position:absolute;
