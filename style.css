@@ -30,8 +30,7 @@ body{
     height:420px;
     object-fit:cover;
 
-    /* 画像を少し上へ表示 */
-    object-position:center 0%;
+    object-position:center -10%;
 }
 .logo-text{
     position:absolute;
