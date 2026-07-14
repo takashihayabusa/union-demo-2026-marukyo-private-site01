@@ -341,45 +341,7 @@ body{
 
 }
 
-.line-contact a{
 
-    display:inline-flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    width:100%;
-
-    max-width:600px;
-
-    padding:22px;
-
-    background:linear-gradient(135deg,#06C755,#00A944);
-
-    color:#ffffff;
-
-    text-decoration:none;
-
-    font-size:28px;
-
-    font-weight:bold;
-
-    border-radius:20px;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.25);
-
-    transition:.3s;
-
-}
-
-.line-contact a:hover{
-
-    transform:scale(1.03);
-
-    opacity:.95;
-
-}
 
 /* ==========================================
    PDF表示
@@ -418,6 +380,152 @@ img{
 section{
 
     margin-bottom:30px;
+
+}
+
+/* ===== 委員長相談 ===== */
+
+.consult-btn{
+
+    display:block;
+
+    width:100%;
+    max-width:600px;
+
+    margin:20px auto;
+
+    padding:22px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:linear-gradient(135deg,#06C755,#00A944);
+
+    color:white;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.consult-content{
+
+    display:none;
+
+    margin:30px auto;
+
+    max-width:1000px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+
+}
+
+.consult-box{
+
+    display:flex;
+
+    gap:25px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.consult-card{
+
+    flex:1;
+
+    min-width:320px;
+
+    background:#f8fff9;
+
+    border:1px solid #dcefdc;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.consult-card h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.consult-card h1{
+
+    color:#06C755;
+
+    font-size:48px;
+
+    margin:20px 0;
+
+}
+
+.phone-btn,
+.line-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:16px 35px;
+
+    border-radius:15px;
+
+    background:#06C755;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+.line-qr{
+
+    width:180px;
+
+    display:block;
+
+    margin:20px auto;
+
+}
+
+@media(max-width:768px){
+
+    .consult-box{
+
+        flex-direction:column;
+
+    }
+
+    .consult-card{
+
+        min-width:100%;
+
+    }
 
 }
 /* ==========================================
