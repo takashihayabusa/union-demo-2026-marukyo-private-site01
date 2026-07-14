@@ -21,7 +21,7 @@ body{
 
 .logo{
     width:100%;
-    background:linear-gradient(135deg,#8b0000,#c62828);
+    background:#ffffff;
     text-align:center;
 }
 
@@ -33,7 +33,6 @@ body{
     display:block;
     margin:0 auto;
 }
-
 /* ==========================================
    メイン画像
 ========================================== */
