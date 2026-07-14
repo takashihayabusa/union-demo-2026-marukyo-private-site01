@@ -498,3 +498,21 @@ section{
     }
 
 }
+@media (max-width:768px){
+
+    .line-contact{
+        margin:20px 15px;
+        padding:20px;
+    }
+
+    .line-qr{
+        width:180px;
+    }
+
+    .line-btn{
+        width:90%;
+        font-size:18px;
+        padding:15px 0;
+    }
+
+}
