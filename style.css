@@ -20,6 +20,10 @@ body{
 /* ==========================================
    ロゴ
 ========================================== */
+/* ==========================
+   ロゴ
+========================== */
+
 .logo{
     width:100%;
     background:#fff;
@@ -28,13 +32,20 @@ body{
     margin:0;
     line-height:0;
     overflow:hidden;
+
+    /* ロゴ全体の高さ */
+    height:220px;   /* 200～220pxがおすすめ */
 }
+
 .logo img{
     display:block;
     width:100%;
-    max-width:1000px;
+    max-width:1200px;
     height:auto;
     margin:0 auto;
+
+    /* ↓画像を下へ少し移動 */
+    transform:translateY(35px);
 }
 /* ==========================================
    メイン画像
