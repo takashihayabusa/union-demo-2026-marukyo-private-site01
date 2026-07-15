@@ -163,9 +163,9 @@ body{
 /* 組合活動（スマホ） */
 
 .activity-grid{
-
-    display:block;
-
+    display:flex;
+    flex-direction:column;
+    gap:15px;
 }
 
 .activity-grid .sub-btn{
@@ -182,6 +182,11 @@ body{
 
     font-size:18px;
 
+}
+
+
+.activity-card{
+    width:100%;
 }
 
 /* ==========================================
