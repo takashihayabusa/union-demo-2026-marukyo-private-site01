@@ -245,22 +245,36 @@
 
 function toggleContent(id){
 
+    <script>
+function toggleContent(id) {
+
     const content = document.getElementById(id);
 
-    if(!content) return;
+    if (!content) return;
 
-    if(content.classList.contains("active")){
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        content.style.display = "block";
+    }
+}
 
-        content.classList.remove("active");
+// LINEのリッチメニューから来た時
+window.addEventListener("load", function () {
 
-    }else{
+    if (location.hash === "#news") {
 
-        content.classList.add("active");
+        document.getElementById("news-content").style.display = "block";
+
+        document.getElementById("news").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
 
     }
 
-}
-
+});
+</script>
 </script>
 
 </body>
