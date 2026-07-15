@@ -291,6 +291,12 @@ body{
     box-sizing:border-box;
 
 }
+.news-list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    width:100%;
+}
 
 .pdf-btn:hover{
 
