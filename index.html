@@ -251,10 +251,6 @@
 ========================= -->
 
 <script>
-
-function toggleContent(id){
-
-    <script>
 function toggleContent(id) {
 
     const content = document.getElementById(id);
@@ -268,13 +264,18 @@ function toggleContent(id) {
     }
 }
 
-// LINEのリッチメニューから来た時
+// LINEのリッチメニューから開いた時
 window.addEventListener("load", function () {
 
     if (location.hash === "#news") {
 
+        // 組合活動を開く
+        document.getElementById("activity-content").style.display = "block";
+
+        // ニュース一覧を開く
         document.getElementById("news-content").style.display = "block";
 
+        // ニュースまで移動
         document.getElementById("news").scrollIntoView({
             behavior: "smooth",
             block: "start"
@@ -283,7 +284,6 @@ window.addEventListener("load", function () {
     }
 
 });
-</script>
 </script>
 
 </body>
