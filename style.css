@@ -13,6 +13,8 @@ body{
     background:#eeeeee;
     color:#333;
     line-height:1.6;
+   　margin:0;
+    padding:0;
 }
 
 /* ==========================================
@@ -27,15 +29,12 @@ body{
     line-height:0;
     overflow:hidden;
 }
-
 .logo img{
     display:block;
     width:100%;
-    max-width:1200px;
+    max-width:1000px;
     height:auto;
     margin:0 auto;
-
-    transform:scale(1.12);
 }
 /* ==========================================
    メイン画像
