@@ -30,11 +30,8 @@ body{
     text-align:center;
     padding:0;
     margin:0;
-    line-height:0;
     overflow:hidden;
-
-    /* ロゴ全体の高さ */
-    height:220px;   /* 200～220pxがおすすめ */
+    line-height:0;
 }
 
 .logo img{
@@ -43,9 +40,7 @@ body{
     max-width:1200px;
     height:auto;
     margin:0 auto;
-
-    /* ↓画像を下へ少し移動 */
-    transform:translateY(35px);
+}
 }
 /* ==========================================
    メイン画像
@@ -55,6 +50,7 @@ body{
     width:100%;
     margin:0;
     padding:0;
+    margin-top:-100px;
 }
 
 .main-image img{
