@@ -75,15 +75,36 @@
     <!-- 組合ニュース -->
     <div id="news">
 
-        <button class="sub-btn"
-                onclick="toggleContent('news-content')">
+    <button class="sub-btn"
+            onclick="toggleContent('news-content')">
 
-            📰 組合ニュース
+        📰 組合ニュース
 
-        </button>
+    </button>
+
+    <div id="news-content" class="sub-content">
+
+        <a href="5月組合ニュース.pdf"
+           class="pdf-btn"
+           target="_blank">
+            📄 5月組合ニュース
+        </a>
+
+        <a href="6月組合ニュース.pdf"
+           class="pdf-btn"
+           target="_blank">
+            📄 6月組合ニュース
+        </a>
+
+        <a href="7月組合ニュース.pdf"
+           class="pdf-btn"
+           target="_blank">
+            📄 7月組合ニュース
+        </a>
 
     </div>
 
+</div>
     <!-- マイカー共済 -->
     　　<a id="mycar"
        　　　　href="マイカー共済.pdf"
@@ -107,34 +128,7 @@
 </div>
         <!-- ニュース -->
 
-        <div id="news-content"
-             class="sub-content">
-
-            <a href="5月組合ニュース.pdf"
-               class="pdf-btn"
-               target="_blank">
-
-                📄 5月組合ニュース
-
-            </a>
-
-            <a href="6月組合ニュース.pdf"
-               class="pdf-btn"
-               target="_blank">
-
-                📄 6月組合ニュース
-
-            </a>
-
-            <a href="7月組合ニュース.pdf"
-               class="pdf-btn"
-               target="_blank">
-
-                📄 7月組合ニュース
-
-            </a>
-
-        </div>
+        
 
     </div>
         <!-- =========================
@@ -253,29 +247,40 @@ function toggleContent(id) {
         content.style.display = "none";
     } else {
         content.style.display = "block";
+ <script>
+function toggleContent(id) {
+
+    const content = document.getElementById(id);
+
+    if (!content) return;
+
+    const current = window.getComputedStyle(content).display;
+
+    if (current === "none") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
     }
 }
 
-// LINEのリッチメニューから開いた時
 window.addEventListener("load", function () {
 
     if (location.hash === "#news") {
 
-        // 組合活動を開く
         document.getElementById("activity-content").style.display = "block";
-
-        // ニュース一覧を開く
         document.getElementById("news-content").style.display = "block";
 
-        // ニュースまで移動
-        document.getElementById("news").scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
+        setTimeout(function () {
+            document.getElementById("news").scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        }, 200);
 
     }
 
 });
+</script>
 </script>
 
 </body>
