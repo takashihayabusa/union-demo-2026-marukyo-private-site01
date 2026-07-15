@@ -164,11 +164,7 @@ body{
 
 .activity-grid{
 
-    display:flex;
-
-    flex-direction:column;
-
-    gap:15px;
+    display:block;
 
 }
 
@@ -239,6 +235,9 @@ body{
     background:#e6e6e6;
 
     transform:translateY(-2px);
+
+   　width:100%;
+    margin:15px 0;
 
 }
 
