@@ -71,30 +71,27 @@
 
     <div class="activity-grid">
 
-    　　　　<button class="sub-btn"
-            　　　　onclick="toggleContent('news-content')">
-        　　　　📰 組合ニュース
-    　　　　</button>
+        <!-- 組合ニュース -->
+        <div class="activity-item">
+
+            <button class="activity-btn"
+                    onclick="toggleContent('news-content')">
+                📰 組合ニュース
+            </button>
 
             <div id="news-content" class="sub-content">
 
                 <div class="news-list">
 
-                    <a href="5月組合ニュース.pdf"
-                       class="pdf-btn"
-                       target="_blank">
+                    <a href="5月組合ニュース.pdf" class="pdf-btn" target="_blank">
                         📄 5月組合ニュース
                     </a>
 
-                    <a href="6月組合ニュース.pdf"
-                       class="pdf-btn"
-                       target="_blank">
+                    <a href="6月組合ニュース.pdf" class="pdf-btn" target="_blank">
                         📄 6月組合ニュース
                     </a>
 
-                    <a href="7月組合ニュース.pdf"
-                       class="pdf-btn"
-                       target="_blank">
+                    <a href="7月組合ニュース.pdf" class="pdf-btn" target="_blank">
                         📄 7月組合ニュース
                     </a>
 
@@ -105,20 +102,33 @@
         </div>
 
         <!-- マイカー共済 -->
-       <a id="mycar"
-       　　href="マイカー共済.pdf"
-       　　class="activity-btn"
-       　　target="_blank">
-        　　🚗 マイカー共済
-    　　</a>
+        <div class="activity-item">
 
-   　　 <a id="nisa"
-       　　href="労金まとめ.pdf"
-       　　class="activity-btn"
-       　　target="_blank">
-        　　🏦 NISA・フリーローン
-   　　 </a>
-         
+            <a id="mycar"
+               href="マイカー共済.pdf"
+               class="activity-btn"
+               target="_blank">
+
+                🚗 マイカー共済
+
+            </a>
+
+        </div>
+
+        <!-- NISA・フリーローン -->
+        <div class="activity-item">
+
+            <a id="nisa"
+               href="労金まとめ.pdf"
+               class="activity-btn"
+               target="_blank">
+
+                🏦 NISA・フリーローン
+
+            </a>
+
+        </div>
+
     </div>
 
 </div>
