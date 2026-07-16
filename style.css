@@ -161,44 +161,35 @@ body{
 ========================================== */
 
 /* 組合活動（スマホ） */
+/* 組合活動 */
 
-
-
-.activity-grid .sub-btn{
-
-    width:100%;
-
-    white-space:normal;
-
-    text-align:center;
-
-    min-height:65px;
-
-    line-height:1.5;
-
-    font-size:18px;
-
-}
 .activity-grid{
+
     display:flex;
     flex-direction:column;
-    gap:15px;
-    width:100%;
+    gap:18px;
+
 }
 
-.activity-card{
+.activity-item{
+
     width:100%;
+
 }
+
 .activity-btn{
+
     display:flex;
     justify-content:center;
     align-items:center;
 
     width:100%;
     min-height:70px;
+
     padding:18px;
 
     background:#f5f5f5;
+
     border:none;
     border-radius:15px;
 
@@ -207,18 +198,23 @@ body{
     text-decoration:none;
     color:#333;
 
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
 
-    margin-bottom:15px;
-    box-sizing:border-box;
+    cursor:pointer;
 
     transition:.3s;
+
+    box-sizing:border-box;
+
 }
 
 .activity-btn:hover{
+
     background:#e6e6e6;
+
     transform:translateY(-2px);
+
 }
 /* ==========================================
    サブボタン
