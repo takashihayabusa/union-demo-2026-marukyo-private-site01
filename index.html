@@ -238,38 +238,66 @@
      JavaScript
 ========================= -->
 <script>
-function toggleContent(id) {
+<script>
+function toggleContent(id){
 
     const content = document.getElementById(id);
 
-    if (!content) return;
-
-    const current = window.getComputedStyle(content).display;
-
-    if (current === "none") {
-        content.style.display = "block";
-    } else {
-        content.style.display = "none";
+    if(content.classList.contains("active")){
+        content.classList.remove("active");
+    }else{
+        content.classList.add("active");
     }
 }
 
-window.addEventListener("load", function () {
+/* LINEのアンカーリンク対応 */
+window.onload = function(){
 
-    if (location.hash === "#news") {
+    const hash = window.location.hash;
 
-        document.getElementById("activity-content").style.display = "block";
-        document.getElementById("news-content").style.display = "block";
+    if(hash){
 
-        setTimeout(function () {
-            document.getElementById("news").scrollIntoView({
-                behavior: "smooth",
-                block: "center"
-            });
-        }, 200);
+        if(
+            hash=="#activity-content" ||
+            hash=="#mycar" ||
+            hash=="#nisa"
+        ){
+
+            document
+                .getElementById("activity-content")
+                .classList.add("active");
+        }
+
+        if(hash=="#news-content"){
+
+            document
+                .getElementById("activity-content")
+                .classList.add("active");
+
+            document
+                .getElementById("news-content")
+                .classList.add("active");
+        }
+
+        const target=document.querySelector(hash);
+
+        if(target){
+
+            setTimeout(function(){
+
+                target.scrollIntoView({
+                    behavior:"smooth",
+                    block:"center"
+                });
+
+            },300);
+
+        }
 
     }
 
-});
+}
+</script>
 </script>
 
 </body>
