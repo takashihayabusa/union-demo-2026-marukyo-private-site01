@@ -172,8 +172,7 @@
 
     </button>
 
-    <div id="consult-content"
-         class="consult-content">
+    <div id="consult" class="content">
 
         <h2>相談方法をお選びください</h2>
 
@@ -278,7 +277,7 @@ window.onload = function(){
 
         // 相談する
         if(hash=="#consult"){
-            document.getElementById("consult-content").classList.add("active");
+            document.getElementById("consult").classList.add("active");
         }
 
         const target = document.querySelector(hash);
