@@ -113,6 +113,14 @@ body{
     transition:.25s ease;
 
     text-align:left;
+
+   display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    text-align:left;
 }
 
 .btn:hover{
@@ -120,6 +128,49 @@ body{
     transform:translateY(-3px);
 
     box-shadow:0 12px 24px rgba(0,0,0,.20);
+
+}
+.btn-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+.btn-title{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#333;
+
+}
+.btn-sub{
+
+    margin-top:8px;
+
+    font-size:16px;
+
+    color:#777;
+
+    font-weight:500;
+
+}
+.arrow{
+
+    font-size:34px;
+
+    color:#8B0000;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+.btn:hover .arrow{
+
+    transform:translateX(6px);
 
 }
 /* ==========================================
