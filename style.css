@@ -126,37 +126,64 @@ body{
    アコーディオン
 ========================================== */
 
+/*==========================================
+  コンテンツカード（プロ仕様）
+==========================================*/
+
 .content{
 
     display:none;
 
-    margin-top:15px;
+    background:#ffffff;
 
+    margin-top:15px;
     margin-bottom:25px;
 
-    padding:30px;
-
-    background:#ffffff;
+    padding:28px;
 
     border-radius:20px;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    border:1px solid #e6e6e6;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.08);
+
+    line-height:1.9;
 
     font-size:18px;
 
-    line-height:1.8;
+    animation:fadeIn .35s ease;
 
 }
 
 .content p{
+   color:#444;
 
-    margin-bottom:15px;
+   margin-bottom:15px;
+
+   text-align:justify;
 
 }
 
 .content.active{
 
     display:block;
+
+}
+.content h2{
+
+    font-size:24px;
+
+    color:#8B0000;
+
+    margin-bottom:18px;
+
+    font-weight:700;
+
+}
+.btn + .content{
+
+    margin-top:12px;
 
 }
 
@@ -719,6 +746,27 @@ section{
     border-radius:16px;
 
 　}
+/*==========================================
+  フェードイン
+==========================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
 
 }
 
