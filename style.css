@@ -136,25 +136,33 @@ body{
 
     flex-direction:column;
 
+    align-items:flex-start;
+
+    gap:6px;
+
+    flex:1;
+
 }
 .btn-title{
 
-    font-size:30px;
+    display:block;
+
+    font-size:26px;
 
     font-weight:700;
 
-    color:#333;
+    line-height:1.2;
 
 }
 .btn-sub{
 
-    margin-top:8px;
+    display:block;
 
-    font-size:16px;
+    font-size:15px;
 
     color:#777;
 
-    font-weight:500;
+    line-height:1.5;
 
 }
 .arrow{
@@ -173,6 +181,7 @@ body{
     transform:translateX(6px);
 
 }
+
 /* ==========================================
    アコーディオン
 ========================================== */
