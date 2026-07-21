@@ -114,13 +114,17 @@ body{
 
     text-align:left;
 
-   display:flex;
+    display:flex;
 
     justify-content:space-between;
 
     align-items:center;
 
     text-align:left;
+
+    width:100%;
+    
+    margin:12px auto;
 }
 
 .btn:hover{
@@ -217,11 +221,11 @@ body{
 }
 
 .content p{
-   color:#444;
+    color:#444;
 
-   margin-bottom:15px;
+    margin-bottom:15px;
 
-   text-align:justify;
+    text-align:justify;
 
 }
 
