@@ -82,56 +82,38 @@ body{
   メインボタン（プロ仕様）
 ==========================================*/
 
-.btn{
-
-    width:100%;
+.pdf-btn{
 
     display:flex;
+    justify-content:center;
     align-items:center;
-    justify-content:space-between;
-
-    padding:18px 22px;
-
-    margin:12px 0;
-
-    border:none;
-    border-radius:18px;
-
-    background:linear-gradient(180deg,#ffffff,#f5f5f5);
-
-    color:#222;
-
-    font-size:22px;
-    font-weight:700;
-
-    cursor:pointer;
-
-    box-shadow:
-        0 6px 18px rgba(0,0,0,.12),
-        0 2px 6px rgba(0,0,0,.08);
-
-    transition:.25s ease;
-
-    text-align:left;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    text-align:left;
 
     width:100%;
-    
-    margin:12px auto;
+    min-height:72px;
+
+    margin-top:12px;
+    padding:0 20px;
+
+    background:#1976d2;
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:20px;
+    font-weight:bold;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    box-sizing:border-box;
+
+    gap:10px;
 }
 
-.btn:hover{
+.pdf-btn:hover{
 
-    transform:translateY(-3px);
-
-    box-shadow:0 12px 24px rgba(0,0,0,.20);
+    background:#1259a8;
 
 }
 .btn-left{
