@@ -20,9 +20,6 @@ body{
 /* ==========================================
    ロゴ
 ========================================== */
-/* ==========================
-   ロゴ
-========================== */
 
 .logo{
     width:100%;
@@ -81,6 +78,46 @@ body{
 /*==========================================
   メインボタン（プロ仕様）
 ==========================================*/
+.btn{
+
+    width:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:18px 22px;
+
+    margin:12px 0;
+
+    border:none;
+    border-radius:18px;
+
+    background:linear-gradient(180deg,#ffffff,#f5f5f5);
+
+    color:#222;
+
+    font-size:22px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,.12),
+        0 2px 6px rgba(0,0,0,.08);
+
+    transition:.25s ease;
+
+    text-align:left;
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 24px rgba(0,0,0,.20);
+
+}
 
 .pdf-btn:hover{
 
